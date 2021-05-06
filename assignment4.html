@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ikumi Travel - Find your next destination</title>
+    <link rel="stylesheet" type="text/css" href="css/assignment4.css">
+    <script defer src="js/assignment4.js"></script>
+  </head>
+  <body>
+    <header><!--HEADER-->
+      <div class="page-wrapper">
+        <a id="skip-link" href="#main">Skip to main content</a>
+        <!--LOGO-->
+        <a id="logo" href="#"><span id="logo-english">Ikumi</span><span id="logo-japanese">いくみ</span></a>
+        <nav id="main-navigation"><!--MAIN NAVIGATION-->
+          <h2 class="hidden">Main navigation</h2>
+<!--            <button class="menu-toggle" onclick="toggleMenu()"><img src="images/bars-icon.png" alt="menu bar icon"></button>-->
+            <ul class="menu" id="main-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Tours</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header><!--END HEADER-->
+
+    <main><!--MAIN-->
+
+      <!--ERROR MESSAGE FOR SMALL SCREEN-->
+      <div class="page-wrapper">
+        <div class="hidden" id="error-container">
+          <p id="mediaMsg">Sorry, your screen is too small.</p>
+          <div class="earth"></div>
+          <div class="stars1" id="star1-8">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-9">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-10">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars2" id="star2-6">
+            <div class="star-diamond"></div>
+          </div>
+          <div class="stars2" id="star2-7">
+            <div class="star-diamond"></div>
+          </div>
+          <div class="stars2" id="star2-8">
+            <div class="star-diamond"></div>
+          </div>
+        </div>
+      </div><!--END ERROR MESSAGE FOR SMALL SCREEN-->
+
+      <div class="media">
+        <div class="background"></div>
+        <div class="page-wrapper">
+
+          <div class="earth"></div><!--CSS SHAPES-->
+          <div id="cloud1">
+            <div id="small-circle1"></div>
+            <div id="big-circle1"></div>
+            <div class="clouds-body"></div>
+          </div>
+          <div class="bird-container">
+            <div class="bird"></div>
+          </div>
+          <div class="bird-container" id="bird-container2">
+            <div class="bird" id="bird2" ></div>
+          </div>
+          <div class="stars1" id="star1-1">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-2">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-3">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars2" id="star2-1">
+            <div class="star-diamond"></div>
+          </div>
+          <div class="stars2" id="star2-2">
+            <div class="star-diamond"></div>
+          </div>
+          <div class="stars2" id="star2-3">
+            <div class="star-diamond"></div>
+          </div><!--END CSS SHAPES-->
+
+          <!--MAIN SECTION-->
+          <h1 id="title">Find your next destination</h1>
+          <p id="instruction">Answer a question below, and see which country is the best to visit for you.</p>
+          <div id="airplane">
+            <div id="airplane-body"></div>
+            <div id="airplane-bottomR"></div>
+            <div id="airplane-bottomL"></div>
+          </div>
+          <form method="get" action="#" name="questionForm">
+            <label for="spendTime" id="label">How would you like to spend your time?</label>
+            <div>
+              <select id="spendTime" name="spendTime">
+                <option value="">- Select one -</option>
+                <option value="TH">Explore nature</option>
+                <option value="JP">Explore the city</option>
+                <option value="TW">Relax casually</option>
+                <option value="SG">Relax luxuriously</option>
+             </select>
+            </div>
+            <button type="submit" name="submit" id="btn">See the result</button>
+          </form>
+          <!--END MAIN SECTION-->         
+
+          <div id="minicloud"><!--CSS SHAPES-->
+            <div id="minicloud-bigcircle"></div>
+            <div id="minicloud-smallcircle"></div>
+            <div id="minicloud-body"></div>
+          </div>
+          <div id="cloud2">
+            <div id="small-circle2"></div>
+            <div id="big-circle2"></div>
+            <div class="clouds-body"></div>
+          </div>
+          <div class="stars1" id="star1-4">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-5">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-6">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars1" id="star1-7">
+            <div class="star-circle"></div>
+          </div>
+          <div class="stars2" id="star2-4">
+            <div class="star-diamond"></div>
+          </div>
+          <div class="stars2" id="star2-5">
+            <div class="star-diamond"></div>
+          </div><!--END CSS SHAPES-->
+
+        </div>
+       </div>
+      <section class="media"><!--COUNTRY INFORMATION-->
+        <div class="page-wrapper">
+          <div class="flex" id="thailand">
+            <div class="info">
+              <h2>Thailand</h2>
+              <p>Thailand is one of the popular destinations for travel. It is located in South Asia, known for tropical beaches, ancient ruins and temples. The beaches in Thailand are famous for the beautiful ocean and scenery, and there are resort hotels around there too. Also, there are many small islands in Thailand. You can explore those islands and explore nature. For leisure, you can hang out with elephants. One of the best-known places is called Elephant Nature Park. If you would like to relax in nature, it is a good place to go.</p>
+              <button class="resetBtn">Go back to home</button>
+            </div>
+            <img class="image" src="images/thailand1.jpg" alt="Photo of the boats at the beach"/>
+          </div>
+          <div class="flex" id="japan">
+            <div class="info">
+              <h2>Japan</h2>
+              <p>Japan is an island country that is surrounded by the Pacific Ocean and, yet it is a metropolis country. You will find a unique culture there, which is mixed with modern and old. For example, you will see an old temple in the city. Also, there are a variety of restaurants and shops, especially in Tokyo. One of the unique things in Japan is that convenience store. They are open 24/7, and they literally sell everything such as foods, alcohol, books, necessities, etc. For leisure, there are Tokyo Disney Land and Universal Studio Japan. If you like exploring the city, it is a good place to visit.</p>
+              <button class="resetBtn">Go back to home</button>
+            </div>
+            <img class="image" src="images/japan1.jpg" alt="Photo of mount Fuji and a temple"/>
+          </div>
+          <div class="flex" id="taiwan">
+            <div class="info">
+              <h2>Taiwan</h2>
+              <p>Taiwan is a small country in East Asia. However, there are a lot of things you can enjoy at an affordable price. If you go to the night market, you can enjoy lots of Taiwanese foods. In terms of Taiwanese foods, one of the famous Taiwanese foods is bubble tea. You can find the shop easily in Taipei and enjoy the authentic bubble tea. Also, you can receive a Taiwanese massage service at a very affordable price. If you would like to enjoy your trip casually but still would like a lot of things, it is a good place to visit.</p>
+              <button class="resetBtn">Go back to home</button>
+            </div>
+            <img class="image" src="images/taiwan1.jpg" alt="Photo of city and Taipei 101"/>
+          </div>
+          <div class="flex" id="singapore">
+            <div class="info">
+              <h2>Singapore</h2>
+              <p>Singapore is one of the world’s leading countries economically and multicultural country. There are four official languages of  English, Malay, Chinese and Tamil. So you can enjoy different cultures there. Also, there are some famous luxury hotels such as Marina Bay Sands,  the Ritz-Carton Millenia Singapore, Mandarin Oriental Singapore, etc. Of course, those come with a wonderful room, spa and foods. There is also Universal Studio Singapore. If you would like to enjoy a luxury hotel stay and have some fun, it is a good place to visit.</p>
+              <button class="resetBtn">Go back to home</button>
+            </div>
+            <img class="image" src="images/singapore1.jpg" alt="Photo of Marina Bay Sands"/>
+          </div>
+        </div>
+      </section><!--END COUNTRY INFORMATION-->
+
+    </main><!--END MAIN-->
+
+    <footer><!--FOOTER-->
+      <div class="page-wrapper">
+        <nav id="footer-navigation">
+          <h2 class="hidden">Footer navigation</h2>
+          <ul class="menu">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </nav>
+        <div id="copyright">&copy; Copyright Ikumi Travel, 2020.</div>
+      </div>
+    </footer><!--END FOOTER-->
+  </body>
+</html>
